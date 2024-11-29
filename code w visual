@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Pinux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="g">
+    <div class="header">
+        <h1>Poznaj Linuxa</h1>
+        <!-- Pasek anwigacji navbar-->
+        <div class="navbar">
+        <!-- Podstrony -->
+        <a href="#">Strona Głowna</a>
+        <a href="#">Dystrybucje</a>
+        <a href="#">Instalacja</a>
+        <a href="#">Polecenia</a>
+        <a href="#">Linus Torvalds</a>
+        <a href="#">O projekcie</a>
+        </div>
+    </div>
+
+    <!-- Definiuje obszar tła otaczający main container -->
+    <div class="main-container">
+        <!-- Opis Projektu -->
+        <div class="about-project">
+            <h2>Kilka słów o projekcie</h2>
+            <p>Kiedy mówisz że chcesz zjeść barszcz, to robisz tak: Przygotowanie buraków i warzyw:
+
+                Buraki obierz, a następnie pokrój w plastry lub zetrzyj na tarce o grubych oczkach.
+                Marchew, pietruszkę i seler również obierz i pokrój na mniejsze kawałki.
+                Cebulę przekrój na pół, a czosnek pozostaw w całości.
+                Gotowanie wywaru:
+                
+                W dużym garnku umieść buraki, warzywa, cebulę, czosnek, liście laurowe i ziele angielskie.
+                Zalej całość bulionem warzywnym (lub wodą) i doprowadź do wrzenia.
+                Duszenie:
+                
+                Zmniejsz ogień i gotuj barszcz na małym ogniu przez około 45–60 minut, aż buraki oddadzą kolor i aromat do wywaru.
+                Jeśli chcesz, możesz dodać kawałek jabłka, aby złagodzić smak.
+                Doprawianie:
+                
+                Wyjmij warzywa i przyprawy (liście laurowe, ziele angielskie) z wywaru.
+                Dodaj ocet jabłkowy lub sok z cytryny, cukier, sól i pieprz do smaku. Dla wzbogacenia smaku możesz również dodać szczyptę majeranku.
+                Przecedzanie:
+                
+                Jeśli zależy Ci na klarownym barszczu, przecedź go przez sitko.
+                Podanie:
+                
+                Barszcz najlepiej smakuje gorący, podawany z uszkami, krokietami, pasztecikami lub po prostu jako czysty wywar.</p>
+        </div>
+    </div>
+    <!-- boczne napisy z podstronami-->
+    <div class="sidebar">
+        <a href="#">Strona Główna</a>
+        <a href="#">Dystrybucje</a>
+        <a href="#">Instalacja</a>
+        <a href="#" class="active">Polecenia</a>
+        <a href="#">Linus Torvalds</a>
+        <a href="#">O projekcie</a>
+    </div>
+    <!-- Placeholder na tekst-->
+    <div class="content">
+        <h2>Dlaczego Linux?</h2>
+        <p>bo barszcz</p>
+    </div>
+
+    <!-- Stopka -->
+    <div class="footer">
+        <p>Poznaj Linuxa - najlepszy darmwoy system operacyjny. Strona w sieci od 2014r. 
+        &copy; Wszelkie prawa zastrzeżone</p>
+    </div>
+</div>
+</body>
+</html>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+  }
+  
+  .header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+  }
+  
+  .header h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  
+  .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+  }
+  
+  .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  .main-container {
+      display: flex;
+      max-width: 1000px;
+      margin: 20px auto;
+      gap: 20px;
+  }
+  
+  .about-project {
+      background-color: #3da18d;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      flex: 1;
+      text-align: center;
+  }
+  
+  .about-project h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  
+  .about-project p {
+      font-size: 14px;
+  }
+  
+  .sidebar {
+      width: 200px;
+      background-color: #e6e6e6;
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  .sidebar a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+  }
+  
+  .sidebar a.active, .sidebar a:hover {
+      background-color: #ffa726;
+      color: #fff;
+  }
+  
+  .content {
+      flex: 2;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  
+  .content p {
+      font-size: 14px;
+      line-height: 1.6;
+  }
+  
+  .footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #333;
+      color: #fff;
+      font-size: 14px;
+      margin-top: 20px;
+      border-radius: 5px;
+  }
